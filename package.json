@@ -1,0 +1,16 @@
+{
+  "name": "usermanagementtool",
+  "version": "0.0.1",
+  "description": "Define User Roles and Profiles",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node ./server/app"
+  },
+  "author": "abhisek.dg@gmail.com",
+  "license": "Owner",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "mongoose": "^3.8.40"
+  }
+}
