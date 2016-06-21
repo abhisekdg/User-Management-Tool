@@ -18,22 +18,40 @@ body {
   margin: 10px;
 }
 
+.navbar-header .navbar-brand span.navbar-hamburger-icon {
+
+   color: #ffffff;
+   background-color: #4279BD;
+   border-radius: 20px;
+   padding:10px;
+   margin :5px 0px 0px 20px;
+}
+
 .sidebar {
     position: fixed;
     top: 51px;
     bottom: 0;
     left: 0;
     z-index: 1000;
-    display: block;
     padding: 15 0 0 0;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #EEEEEE;
+    display: none;
+}
+
+.sidebar-active{
+  display:block;
+}
+
+.sidebar-disabled{
+  display:none;
 }
 
 .sidebar .list-group a.list-group-item:hover {
   background-color: #d3d3d3;
 } 
+
 
 .sidebar .list-group .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
     z-index: 2;
