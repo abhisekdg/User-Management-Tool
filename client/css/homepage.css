@@ -55,32 +55,22 @@ body {
   display:none;
 }
 
-/*.sidebar .list-group a.list-group-item:hover {
-  background-color: #d3d3d3;
-}*/
-.sidebar .list-group a.list-group-item.active:hover{
-  color:blue;
-}
-
-/*.sidebar .list-group a.list-group-item:hover,
-.sidebar .list-group a.list-group-item:focus {
-  color: #555;
-  text-decoration: none;
-  background-color: #d3d3d3;
-}*/
-
-
-/*.sidebar .list-group .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+.sidebar .list-group .list-group-item.active, 
+.sidebar .list-group .list-group-item.active:focus, 
+.sidebar .list-group .list-group-item.active:hover {
     z-index: 2;
     color: #fff;
     background-color: #428BCA;
     border-color: #428BCA;
-}*/
+}
 
+.sidebar .list-group a.list-group-item:hover, 
+.sidebar .list-group a.list-group-item:focus {
+  background-color: #d3d3d3;
+}
 
 .sidebar .list-group a.list-group-item .sidebar-align-listgroup-text {
   padding-left:10px;
-  color: #878787;
   font-weight:bold;
 }
 
