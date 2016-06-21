@@ -1,5 +1,5 @@
 {
-  "name": "userManagementtool",
+  "name": "usermanagementtool",
   "description": "Define User Roles and Profile",
   "main": "app.js",
   "license": "Owner",

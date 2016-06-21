@@ -1,0 +1,56 @@
+body {
+  padding-top: 70px;
+  background-color: #EEEEEE;
+}
+
+.navbar {
+	background-color: #428BCA;
+}
+
+.navbar-default .navbar-brand {
+    float: none;
+    padding: 0;
+}
+
+.navbar-header .navbar-brand img{
+	height: 40px;
+  display: inline;
+  margin: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 15 0 0 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #EEEEEE;
+}
+
+.sidebar .list-group a.list-group-item:hover {
+  background-color: #d3d3d3;
+} 
+
+.sidebar .list-group .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #d3d3d3;
+    border-color: #d3d3d3;
+}
+
+.sidebar .list-group a.list-group-item .sidebar-align-listgroup-text {
+  padding-left:10px;
+  color: #428BCA;
+  font-weight:bold;
+}
+
+.list-group-umt {
+    border-color: #EEEEEE;
+    background-color: #EEEEEE;
+    padding-bottom: 20px;
+}
+
