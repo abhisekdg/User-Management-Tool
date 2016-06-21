@@ -1,6 +1,6 @@
 body {
   padding-top: 70px;
-  background-color: #EEEEEE;
+  background-color: #F2F2F2;
 }
 
 .navbar {
@@ -21,10 +21,17 @@ body {
 .navbar-header .navbar-brand span.navbar-hamburger-icon {
 
    color: #ffffff;
-   background-color: #4279BD;
-   border-radius: 20px;
    padding:10px;
-   margin :5px 0px 0px 20px;
+   margin :2px 0px 0px 6px;
+}
+
+.navbar-header .navbar-brand span.glyphicon,.sidebar .list-group span.glyphicon {
+    font-size: 20px;
+}
+
+.navbar-header .navbar-brand span:hover {
+  background-color: #4279BD;
+  border-radius: 20px;
 }
 
 .sidebar {
@@ -48,27 +55,38 @@ body {
   display:none;
 }
 
-.sidebar .list-group a.list-group-item:hover {
+/*.sidebar .list-group a.list-group-item:hover {
   background-color: #d3d3d3;
-} 
+}*/
+.sidebar .list-group a.list-group-item.active:hover{
+  color:blue;
+}
+
+/*.sidebar .list-group a.list-group-item:hover,
+.sidebar .list-group a.list-group-item:focus {
+  color: #555;
+  text-decoration: none;
+  background-color: #d3d3d3;
+}*/
 
 
-.sidebar .list-group .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+/*.sidebar .list-group .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
     z-index: 2;
     color: #fff;
-    background-color: #d3d3d3;
-    border-color: #d3d3d3;
-}
+    background-color: #428BCA;
+    border-color: #428BCA;
+}*/
+
 
 .sidebar .list-group a.list-group-item .sidebar-align-listgroup-text {
   padding-left:10px;
-  color: #428BCA;
+  color: #878787;
   font-weight:bold;
 }
 
 .list-group-umt {
     border-color: #EEEEEE;
     background-color: #EEEEEE;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
