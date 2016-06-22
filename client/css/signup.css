@@ -1,0 +1,66 @@
+body {
+  padding-top: 70px;
+  background-color: #F2F2F2;
+}
+
+.form-bgcontext {
+  
+  max-width:585px;
+  margin:0 auto;
+  background-color: #fff;
+}
+
+
+.form-signup {
+
+  max-width:350px;
+  margin:0 auto;
+  padding: 15px 15px 30px 15px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-signup .form-signup-heading {
+  padding:10px;
+}
+.form-signup .form-control {
+    font-size: 16px;
+}
+
+.form-signup .form-group,
+.form-signup .input-group {
+  height : 40px;
+  margin-bottom: 10px;
+}
+
+.form-signup .input-group .form-control:first-child , 
+.form-signup .input-group .form-control:last-child ,
+.form-signup .input-group .form-control:not(:first-child):not(:last-child){
+  border-radius: 4px;
+}
+
+.form-signup .input-group .input-group-addon,
+.form-signup .form-group .input-group-addon
+{
+  border-radius: 4px;
+  background-color: #fff;
+  border-color:transparent;
+  padding : 3px 3px;
+}
+
+.form-signup .input-group .btn-group, .btn-group-vertical {
+  display: block;
+}
+
+.form-signup .form-group ul.dropdown-menu li {
+
+  padding: 5px 15px;
+}
+
+.form-signup .form-signup-birthday,
+.form-signup .form-signup-gender {
+   height : 20px;
+  margin-bottom: 10px;
+
+}
