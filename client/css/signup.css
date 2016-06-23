@@ -22,7 +22,7 @@ body {
 }
 
 .form-signup .form-signup-heading {
-  padding:10px;
+  padding: 10px 0;
 }
 .form-signup .form-control {
     font-size: 16px;
@@ -49,18 +49,6 @@ body {
   padding : 3px 3px;
 }
 
-.form-signup .input-group .btn-group, .btn-group-vertical {
-  display: block;
-}
 
-.form-signup .input-group ul.dropdown-menu li {
 
-  padding: 5px 15px;
-}
 
-.form-signup .form-signup-birthday,
-.form-signup .form-signup-gender {
-   height : 20px;
-  margin-bottom: 10px;
-
-}

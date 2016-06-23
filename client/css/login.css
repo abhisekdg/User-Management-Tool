@@ -22,7 +22,7 @@ body {
 }
 
 .form-bgcontext .form-login .form-login-heading {
-  padding:10px;
+  padding:10px 0;
 }
 .form-bgcontext .form-login .form-control {
     font-size: 16px;
