@@ -17,30 +17,36 @@ gulp.task('eslint', function () {
 });
 
 gulp.task('serve', function () {
-	/*1. run your script as a server */
 	var server = gls('server/app.js', {
 		env: {
-			NODE_ENV: 'development'
+			NODE_ENV: 'development',
+			PORT: 9000
 		}
 	}, false);
 	server.start();
 
 	browserSync.init({
-		proxy: 'http://localhost:9000'
+		proxy: 'http://localhost:9000',
+		port: 9804
 	});
 
 	gulp.watch(['client/*.html'], reload);
-	gulp.watch(['client/css/**/*.css'], ['styles', reload]);
-	gulp.watch(['client/images/**/*'], reload);
+	gulp.watch(['client/css/*.css'], reload);
+	gulp.watch(['client/images/*'], reload);
 });
 
 
-gulp.task('serve:prod', ['default'], function () {
-	/*1. run your script as a server */
+gulp.task('serve:prod', function () {
 	var server = gls('server/app.js', {
 		env: {
-			NODE_ENV: 'production'
+			NODE_ENV: 'production',
+			PORT: 9000
 		}
 	}, false);
 	server.start();
+});
+
+gulp.task('default', ['serve'], function () {
+	// place code for your default task here
+	console.log('Starting default task !! ');
 });
