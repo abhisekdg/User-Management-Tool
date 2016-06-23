@@ -9,6 +9,7 @@ var gls = require('gulp-live-server');
 gulp.task('eslint', function () {
 
 	return gulp.src(['client/**/*.html',
+			'client/app/**/*.js',
 			'gulpfile.js'
 		])
 		.pipe($.eslint())
@@ -16,7 +17,7 @@ gulp.task('eslint', function () {
 		.pipe($.eslint.failOnError());
 });
 
-gulp.task('serve', ['eslint'], function () {
+gulp.task('serve', function () {
 	var server = gls('server/app.js', {
 		env: {
 			NODE_ENV: 'development',
@@ -33,6 +34,7 @@ gulp.task('serve', ['eslint'], function () {
 	gulp.watch(['client/*.html'], reload);
 	gulp.watch(['client/css/*.css'], reload);
 	gulp.watch(['client/images/*'], reload);
+	gulp.watch(['client/app/**/*.js'], ['eslint'], reload);
 });
 
 

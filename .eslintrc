@@ -15,14 +15,7 @@
     "new-cap": 0
   },
   "globals": {
-    "google": false,
-    "express": false,
-    "kandyStatsApp": false,
-    "$": false,
-    "Mustache": false,
-    "Polymer": false,
-    "KeyframeEffect": false,
-    "page":false
+    "express": false
   },
   "plugins": ["html"]
 }
