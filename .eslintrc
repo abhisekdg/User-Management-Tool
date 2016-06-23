@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "quotes": [1, "single"],
+    "no-shadow": 0,
+    "no-unused-vars": 1,
+    "no-underscore-dangle": 0,
+    "eol-last": 0,
+    "camelcase": [0, {
+      "properties": "always"
+    }],
+    "new-cap": 0
+  },
+  "globals": {
+    "google": false,
+    "express": false,
+    "kandyStatsApp": false,
+    "$": false,
+    "Mustache": false,
+    "Polymer": false,
+    "KeyframeEffect": false,
+    "page":false
+  },
+  "plugins": ["html"]
+}
