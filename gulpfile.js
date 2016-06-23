@@ -16,7 +16,7 @@ gulp.task('eslint', function () {
 		.pipe($.eslint.failOnError());
 });
 
-gulp.task('serve', function () {
+gulp.task('serve', ['eslint'], function () {
 	var server = gls('server/app.js', {
 		env: {
 			NODE_ENV: 'development',
