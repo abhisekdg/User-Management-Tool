@@ -1,0 +1,25 @@
+.navbar {
+	background-color: #428BCA;
+}
+
+.navbar-default .navbar-brand {
+    float: none;
+    padding: 0;
+}
+
+.navbar-header .navbar-brand img{
+	height: 40px;
+  display: inline;
+  margin: 10px;
+}
+
+.navbar-header .navbar-brand span.navbar-hamburger-icon {
+
+   color: #ffffff;
+   padding:10px;
+   margin :2px 0px 0px 6px;
+}
+
+.navbar-header .navbar-brand span.glyphicon,.sidebar .list-group span.glyphicon {
+    font-size: 20px;
+}
