@@ -23,3 +23,59 @@
 .navbar-header .navbar-brand span.glyphicon,.sidebar .list-group span.glyphicon {
     font-size: 20px;
 }
+
+.navbar-header .navbar-brand span:hover {
+  background-color: #4279BD;
+  border-radius: 20px;
+  cursor:pointer;
+}
+
+ /* sidebar start */
+ 
+ .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10 0 0 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #EEEEEE;
+    display: none;
+}
+
+.sidebar-active{
+  display:block;
+}
+
+.sidebar-disabled{
+  display:none;
+}
+
+.sidebar .list-group .list-group-item.active, 
+.sidebar .list-group .list-group-item.active:focus, 
+.sidebar .list-group .list-group-item.active:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #428BCA;
+    border-color: #428BCA;
+}
+
+.sidebar .list-group a.list-group-item:hover, 
+.sidebar .list-group a.list-group-item:focus {
+  background-color: #d3d3d3;
+}
+
+.sidebar .list-group a.list-group-item .sidebar-align-listgroup-text {
+  padding-left:10px;
+  font-weight:bold;
+}
+
+.list-group-umt {
+    border-color: #EEEEEE;
+    background-color: #EEEEEE;
+    padding-bottom: 15px;
+}
+
+ /* sidebar close */

@@ -9,6 +9,7 @@ var gls = require('gulp-live-server');
 gulp.task('eslint', function () {
 
 	return gulp.src(['client/**/*.html',
+			'client/components/**/*.js',
 			'client/app/**/*.js',
 			'gulpfile.js'
 		])
@@ -34,6 +35,7 @@ gulp.task('serve', function () {
 	gulp.watch(['client/*.html'], reload);
 	gulp.watch(['client/css/*.css'], reload);
 	gulp.watch(['client/images/*'], reload);
+	gulp.watch(['client/components/**/*'], reload);
 	gulp.watch(['client/app/**/*.js'], ['eslint'], reload);
 });
 
