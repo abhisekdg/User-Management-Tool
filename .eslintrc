@@ -15,7 +15,8 @@
     "new-cap": 0
   },
   "globals": {
-    "express": false
+    "express": false,
+    "angular":false
   },
   "plugins": ["html"]
 }
