@@ -45,13 +45,7 @@
     display: none;
 }
 
-.sidebar-active{
-  display:block;
-}
-
-.sidebar-disabled{
-  display:none;
-}
+.sidebar.active { display:block;}
 
 .sidebar .list-group .list-group-item.active, 
 .sidebar .list-group .list-group-item.active:focus, 
