@@ -1,29 +1,32 @@
-
 <div data-ng-controller="NavbarCtrl">
 
-<!-- Header -->
-<nav class="navbar navbar-default navbar-fixed-top" >
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" data-ng-click="onNavbarMenuToggleClick()">
-        <span class="glyphicon glyphicon-menu-hamburger navbar-hamburger-icon" aria-hidden="true"></span>
-      </a>
+  <!-- Header -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" data-ng-click="onNavbarMenuToggleClick()">
+          <span class="glyphicon glyphicon-menu-hamburger navbar-hamburger-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <button class="btn btn-default navbar-btn pull-right" data-ui-sref="login">Sign in</button>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- Side Menu -->
+  <!-- Side Menu -->
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-3 col-md-2 sidebar" data-ng-class="sidebarHideShow">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" data-ng-class="sidebarHideShow">
         <div class="list-group">
-          <a href="#" class="list-group-item active list-group-umt"> 
+          <a href="#" class="list-group-item active list-group-umt">
             <span class="glyphicon glyphicon-user"></span>
             <span class="sidebar-align-listgroup-text"> My Profile</span>
           </a>
           <a href="#" class="list-group-item list-group-umt">
-            <span class="glyphicon glyphicon-cog"></span> 
+            <span class="glyphicon glyphicon-cog"></span>
             <span class="sidebar-align-listgroup-text">Settings</span>
           </a>
           <a href="#" class="list-group-item list-group-umt">
@@ -39,10 +42,9 @@
             <span class="sidebar-align-listgroup-text">Help</span>
           </a>
         </div>
+      </div>
     </div>
   </div>
-</div>  
 
 
 </div>
-
