@@ -3,14 +3,24 @@
 angular.module('UMT')
 	.controller('NavbarCtrl', function ($scope, $document, $log) {
 
-		$scope.isNavbarActive = true;
+		$scope.isNavbarActive = false;
 		$scope.onNavbarMenuToggleClick = function () {
 
 			if ($scope.isNavbarActive) {
-				$scope.isNavbarActive = true;
-			} else {
 				$scope.isNavbarActive = false;
+			} else {
+				$scope.isNavbarActive = true;
 			}
 		};
 
+		$document.bind('click', function (event) {
+			$log.info($scope.isNavbarActive);
+			if (event.target.nodeName === 'BODY') {
+				$scope.$apply(function () {
+					if ($scope.isNavbarActive) {
+						$scope.isNavbarActive = false;
+					}
+				});
+			}
+		});
 	});

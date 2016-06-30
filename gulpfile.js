@@ -11,6 +11,7 @@ gulp.task('eslint', function () {
 	return gulp.src(['client/**/*.html',
 			'client/components/**/*.js',
 			'client/app/**/*.js',
+			'client/app/**/*.html',
 			'gulpfile.js'
 		])
 		.pipe($.eslint())
@@ -36,6 +37,8 @@ gulp.task('serve', function () {
 	gulp.watch(['client/css/*.css'], reload);
 	gulp.watch(['client/images/*'], reload);
 	gulp.watch(['client/components/**/*'], reload);
+	gulp.watch(['client/app/**/*.html'], reload);
+	gulp.watch(['client/app/**/*.css'], reload);
 	gulp.watch(['client/app/**/*.js'], ['eslint'], reload);
 });
 
