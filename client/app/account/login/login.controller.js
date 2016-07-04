@@ -3,11 +3,7 @@
 angular
 	.module('UMT')
 	.controller('LoginCtrl', function ($scope, $log) {
-		$scope.master = {};
-
-		$scope.reset = function () {
-			$scope.user = angular.copy($scope.master);
-		};
+		$scope.user = {};
 
 		$scope.loginSubmit = function () {
 			var uEmail = $scope.user.email;
@@ -16,7 +12,5 @@ angular
 			$log.info(uEmail);
 			$log.info(uPass);
 		};
-
-		$scope.reset();
 
 	});

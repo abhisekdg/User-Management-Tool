@@ -1,0 +1,52 @@
+<div class="container-fluid" data-ng-controller="SignUpCtrl">
+    <div class="form-bgcontext">
+        <form name="formSignup" class="form-signup" novalidate ng-submit="signUp($event)">
+            <h2 class="form-signup-heading">Join UMT</h2>
+            <div class="form-group" ng-class="{'has-error': formSignup.fName.$touched && formSignup.fName.$invalid }">
+                <input type="text" ng-model="user.fname" name="fName" class="form-control" placeholder="First Name" required="" />
+            </div>
+            <div class="errorMessage" ng-messages="formSignup.fName.$error" ng-show="formSignup.fName.$touched">
+                <div class="col-md-8" ng-messages-include="app/account/messages.html"></div>
+            </div>
+            <div class="form-group" ng-class="{'has-error': formSignup.lName.$touched && formSignup.lName.$invalid }">
+                <input type="text" ng-model="user.lName" name="lName" class="form-control" placeholder="Last Name" required="" />
+            </div>
+            <div class="errorMessage" ng-messages="formSignup.lName.$error" ng-show="formSignup.lName.$touched">
+                <div class="col-md-8" ng-messages-include="app/account/messages.html"></div>
+            </div>
+            <div class="form-group" ng-class="{'has-error': formSignup.nickName.$touched && formSignup.nickName.$invalid }">
+                <input type="text" ng-model="user.nickName" name="nickName" class="form-control" placeholder="NickName" required="" />
+            </div>
+            <div class="errorMessage" ng-messages="formSignup.nickName.$error" ng-show="formSignup.nickName.$touched">
+                <div ng-messages-include="app/account/messages.html"></div>
+            </div>
+            <div class="form-group" ng-class="{'has-error': formSignup.uEmail.$touched && formSignup.uEmail.$invalid }">
+                <input type="email" ng-model="user.email" name="uEmail" class="form-control" placeholder="Email" required="" />
+            </div>
+            <div class="errorMessage" ng-messages="formSignup.uEmail.$error" ng-show="formSignup.uEmail.$touched">
+                <div ng-messages-include="app/account/messages.html"></div>
+            </div>
+            <div class="form-group" ng-class="{'has-error': formSignup.uPass.$touched && formSignup.uPass.$invalid }">
+                <input type="password" ng-model="user.pass" name="uPass" class="form-control" placeholder="Password" required="" ng-minlength="5" ng-maxlength="8" ng-blur="passCheck()"/>
+            </div>
+            <div class="errorMessage" ng-messages="formSignup.uPass.$error" ng-show="formSignup.uPass.$touched">
+                <div ng-messages-include="app/account/messages.html"></div>
+            </div>
+            <div class="form-group">
+                <input type="password" ng-model="user.cPass" name="cPass" class="form-control" placeholder="Confirm Password" required="" ng-minlength="5" ng-maxlength="8" ng-blur="passCheck()"/>
+            </div>
+            <div class="errorMessage" ng-messages="formSignup.cPass.$error" ng-show="formSignup.cPass.$touched">
+                <div ng-messages-include="app/account/messages.html"></div>
+            </div>
+            <div class="errorMessage passMismatch" ng-model="passMismatch">{{ passMismatch}}</div>
+            <div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary" ng-disabled="formSignup.$invalid">Sign up</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary" >Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

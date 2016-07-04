@@ -8,7 +8,7 @@
         <div class="errorMessage" ng-messages="form.uEmail.$error" ng-show="form.uEmail.$touched">
             <div ng-messages-include="app/account/messages.html"></div>
         </div>
-        <div class="form-group" ng-class="{ 'has-error': form.uPass.$touched && form.uPass.$invalid }">
+        <div class="form-group" ng-class="{'has-error': form.uPass.$touched && form.uPass.$invalid }">
             <label>Password</label>
             <input type="password" ng-model="user.password" ng-minlength="5" ng-maxlength="8" name="uPass" class="form-control" placeholder="Password" required>
         </div>
@@ -22,7 +22,7 @@
                     <input type="checkbox"> Remember me</label>
             </div>
             <div class="col-md-6 checkbox-align">
-                <a class="forgot" href="passwordReset.html">Forgot password?</a>
+                <a class="forgot" data-ui-sref="forgetPassword">Forgot password?</a>
             </div>
         </div>
     </form>

@@ -13,6 +13,7 @@ angular.module('UMT')
 			}
 		};
 
+
 		$document.bind('click', function (event) {
 			$log.info($scope.isNavbarActive);
 			if (event.target.nodeName === 'BODY') {
