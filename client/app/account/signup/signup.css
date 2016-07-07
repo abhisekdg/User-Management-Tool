@@ -43,11 +43,11 @@
   padding : 3px 3px;
 }
 
-.form-signup .errorMessage{
+.form-signup .error-message{
   font-size: 12px;
   color : red;
 }
 
-.form-signup .passMismatch{
+.form-signup .password-mismatch{
   margin:10px;
 }

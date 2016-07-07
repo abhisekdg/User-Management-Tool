@@ -15,10 +15,10 @@ angular
 				controller: 'SignUpCtrl',
 				templateUrl: 'app/account/signup/signup.html'
 			})
-			.state('forgetPassword', {
-				url: '/forgetPassword',
+			.state('forgot-password', {
+				url: '/forgot-password',
 				controller: 'ForgetPasswordCtrl',
-				templateUrl: 'app/account/forgetPassword/forgetPassword.html'
+				templateUrl: 'app/account/forgetPassword/forget-password.html'
 			});
 
 

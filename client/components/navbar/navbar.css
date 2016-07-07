@@ -33,17 +33,30 @@
  /* sidebar start */
  
  .sidebar {
-    position: fixed;
+    position: absolute;
+    top: 45px;
+    bottom: 0px;
+    left: 0px;
+    width:256px;
+    padding: 10 0 0 0;
+    background-color: #EEEEEE;
+    display: none;
+    box-sizing: border-box;
+    transition: transform ease-in-out .3s,width ease-in-out .3s,visibility .3s;
+
+    /*position: fixed;
     top: 51px;
     bottom: 0;
     left: 0;
-    z-index: 1000;
-    padding: 10 0 0 0;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #EEEEEE;
-    display: none;
+    padding: 10 0 0 0;
+    overflow:auto;
+    outline: 0;
+    display: none;*/
+
 }
+
+
 
 .sidebar.active { display:block;}
 
